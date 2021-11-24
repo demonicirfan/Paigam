@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Chats from '../assets/dummy-data/Chats';
 import Message from '../components/Message/Message';
+import CreateMessage from '../components/MessageInputComponent/Index';
 
 const chatRoomScreen = () => {
   return (
@@ -9,7 +10,9 @@ const chatRoomScreen = () => {
       <FlatList
         data={Chats.messages}
         renderItem={({ item }: { item: any }) => <Message message={item} />}
+        inverted
       />
+      <CreateMessage />
     </View>
   );
 };
