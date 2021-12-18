@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-paigam-staging-75603-authRole",
+      "UnauthRoleArn": "arn:aws:iam::186677230117:role/amplify-paigam-staging-75603-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::186677230117:role/amplify-paigam-staging-75603-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-paigam-staging-75603-deployment",
+      "UnauthRoleName": "amplify-paigam-staging-75603-unauthRole",
+      "StackName": "amplify-paigam-staging-75603",
+      "StackId": "arn:aws:cloudformation:ap-south-1:186677230117:stack/amplify-paigam-staging-75603/f2f2d290-5fd7-11ec-88fc-0a729cf794d6",
+      "AmplifyAppId": "d1cruhftzdo4s5"
+    },
+    "categories": {
+      "auth": {
+        "Paigam": {}
+      }
+    }
+  }
+}

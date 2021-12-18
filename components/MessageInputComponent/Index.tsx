@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TextInput,
+  Pressable,
+  KeyboardAvoidingView,
+  Platform,
+} from 'react-native';
 import {
   FontAwesome,
   Feather,
@@ -13,7 +21,6 @@ const Index = () => {
 
   const sendMessage = () => {
     console.warn('sending: ', message);
-
     setMessage('');
   };
 
@@ -29,7 +36,11 @@ const Index = () => {
     }
   };
   return (
-    <View style={styles.root}>
+    <KeyboardAvoidingView
+      style={styles.root}
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      keyboardVerticalOffset={100}
+    >
       <View style={styles.inputContainer}>
         <FontAwesome
           name='smile-o'
@@ -69,7 +80,7 @@ const Index = () => {
           <AntDesign name='plus' size={24} color='#fff' />
         )}
       </Pressable>
-    </View>
+    </KeyboardAvoidingView>
   );
 };
 
